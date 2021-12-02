@@ -39,6 +39,8 @@ A continuació es detalla la missatgeria corresponent al bloc de dades específi
 
 ## 3.1.2	Petició	dades específiques
 
+![Dades específiques](https://github.com/ConsorciAOC/VO-GRAU_DISCAPACITAT_CCAA/blob/main/images/3%201%202%20Petici%C3%B3%20dades%20espec%C3%ADfiques.png)
+
 | Element | Descripció |
 | --- | --- |
 | /peticioConsultaDadesDiscapacitat/ccaa | Codi de comunitat autònoma: 01	- ANDALUCÍA, 02	- ARAGÓN, 03	- PRINCIPADO DE ASTURIAS, 04	- ISLAS BALEARES, 05	- CANARIAS ,06	- CANTABRIA, 07	- CASTILLA y LEÓN, 08	- CASTILLA-LA MANCHA, 09	- CATALUNYA, 10	- COMUNIDAD VALENCIANA, 11	- EXTREMADURA, 12	- GALICIA, 13	- MADRID, 14	- REGIÓN DE MURCIA, 15	- NAVARRA, 16	- PAÍS VASCO, 17	- LA RIOJA, 18	- CIUDAD DE CEUTA i 19	- CIUDAD DE MELILLA |
@@ -49,6 +51,8 @@ A continuació es detalla la missatgeria corresponent al bloc de dades específi
 | /peticioConsultaDadesDiscapacitat/consentimentTipusDiscapacitat | Indica si el titular  ha donat el consentiment per consultar les dades (_S_/_N_). |
 
 ## 3.1.3	Resposta	dades específiques
+
+![Resposta dades específiques](https://github.com/ConsorciAOC/VO-GRAU_DISCAPACITAT_CCAA/blob/main/images/3%201%203%20Resposta%20dades%20espec%C3%ADfiques.png)
 
 | _Element_ | _Descripció_ |
 | --- | --- |
