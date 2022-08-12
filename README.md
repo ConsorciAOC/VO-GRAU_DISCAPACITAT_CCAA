@@ -4,7 +4,10 @@
 Aquest document detalla la missatgeria associada al servei de consulta de Grau de Discapacitat de la resta de CCAA de l'Estat.
 
 Per poder realitzar la integració cal conèixer prèviament la següent documentació: 
-* Document de Missatgeria Genèrica de la PCI del Consorci AOC
+
+- [Document de Missatgeria Genèrica de la PCI del Consorci AOC.][PCI]
+ 
+[PCI]:https://github.com/ConsorciAOC/PCI
 
 # 2	Transmissions de dades disponibles
 Les dades disponibles a través del servei són les que es presenten a continuació:
