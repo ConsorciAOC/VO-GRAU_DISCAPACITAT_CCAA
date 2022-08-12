@@ -1,6 +1,19 @@
 # VO - GRAU_DISCAPACITAT_CCAA
 
-# 1	Introducció
+
+## INDEX
+
+- [1. Introducció](#1)
+- [2. Transmissions de dades disponibles](#2)
+- [3. Missatgeria del servei](#3)
+   * [3.1 Consulta del grau de discapacitat (GRAU_DISCAPACITAT_CCAA)](#3.1)
+        * [3.1.1 Petició	dades genèriques](#3.1.1)
+		* [3.1.2 Petició	dades específiques](#3.1.2)
+		* [3.1.3 Resposta dades específiques](#3.1.3)
+-  [4. Joc de proves](#4)        
+
+
+# 1	Introducció <a name="1"></a>
 Aquest document detalla la missatgeria associada al servei de consulta de Grau de Discapacitat de la resta de CCAA de l'Estat.
 
 Per poder realitzar la integració cal conèixer prèviament la següent documentació: 
@@ -9,7 +22,7 @@ Per poder realitzar la integració cal conèixer prèviament la següent documen
  
 [PCI]:https://github.com/ConsorciAOC/PCI
 
-# 2	Transmissions de dades disponibles
+# 2	Transmissions de dades disponibles <a name="2"></a>
 Les dades disponibles a través del servei són les que es presenten a continuació:
 
 EMISSOR: Comunitats autònomes de la resta de l'Estat
@@ -20,7 +33,7 @@ EMISSOR: Comunitats autònomes de la resta de l'Estat
 
 Les modalitats disposen de versió imprimible del resultat de la consulta en format PDF. Per més detalls adreceu-vos Extensions de missatgeria del document de missatgeria genèrica.
 
-# 3	Missatgeria dels serveis
+# 3	Missatgeria del servei <a name="3"></a>
 A continuació es detalla la missatgeria corresponent al bloc de dades específiques de les modalitats de consum del producte.
 
 >L'emissor de les dades requereix que s'informin les dades del funcionari que realitza la consulta. Així, cal informar els següents camps de l'element _Funcionario_ del bloc de dades genèriques:
@@ -29,8 +42,8 @@ A continuació es detalla la missatgeria corresponent al bloc de dades específi
 >//SolicitudTransmision/DatosGenericos/Solicitante/Funcionario/NombreCompletoFuncionario i
 >//SolicitudTransmision/DatosGenericos/Solicitante/Funcionario/NifFuncionario_
 
-## 3.1	Consulta del grau de discapacitat (GRAU_DISCAPACITAT_CCAA)
-### 3.1.1	Petició	dades genèriques
+## 3.1	Consulta del grau de discapacitat (GRAU_DISCAPACITAT_CCAA) <a name="3.1"></a>
+### 3.1.1	Petició	dades genèriques <a name="3.1.1"></a>
 
 | Element | Descripció |
 | --- | --- |
@@ -40,7 +53,7 @@ A continuació es detalla la missatgeria corresponent al bloc de dades específi
 | //DatosGenericos/Titular/Apellido1 | Primer cognom del titular. |
 | //DatosGenericos/Titular/Apellido2 | Segon cognom del titular (obligatori si en té). |
 
-## 3.1.2	Petició	dades específiques
+## 3.1.2	Petició	dades específiques <a name="3.1.2"></a>
 
 ![Dades específiques](https://github.com/ConsorciAOC/VO-GRAU_DISCAPACITAT_CCAA/blob/main/images/3%201%202%20Petici%C3%B3%20dades%20espec%C3%ADfiques.png)
 
@@ -53,7 +66,7 @@ A continuació es detalla la missatgeria corresponent al bloc de dades específi
 | /peticioConsultaDadesDiscapacitat/expedient | Número d'expedient del certificat de discapacitat. |
 | /peticioConsultaDadesDiscapacitat/consentimentTipusDiscapacitat | Indica si el titular  ha donat el consentiment per consultar les dades (_S_/_N_). |
 
-## 3.1.3	Resposta	dades específiques
+## 3.1.3	Resposta	dades específiques <a name="3.1.3"></a>
 
 ![Resposta dades específiques](https://github.com/ConsorciAOC/VO-GRAU_DISCAPACITAT_CCAA/blob/main/images/3%201%203%20Resposta%20dades%20espec%C3%ADfiques.png)
 
@@ -76,3 +89,14 @@ A continuació es detalla la missatgeria corresponent al bloc de dades específi
 | //certificat/validesaPermanent | Indica si el reconeixement del certificat de discapacitat es definitiu o no (_S_/_N_). |
 | respostaConsultaDadesDiscapacidad/resultat/codiResultat | 0: existeix el certificat de discapacitat, 1: no hi ha enregistrat un titular amb les dades indicades, 2: no existeix el certificat de discapacitat, 3: la persona no està associada al número d'expedient de certificat indicat, 4:	format d'expedient de discapacitat incorrecte, 5: amb les dades facilitades existeix més d'un titular d'un certificat de discapacitat, 6: el titular consultat està en un procés de revisió del seu grau de discapacitat, 8: consulta per data no disponible, cal realitzar consulta a data actual, 9: consulta per expedient no disponible i 0502: error realitzant la consulta. |
 | respostaConsultaDadesDiscapacidad/resultat/descripcio | Descripció del resultat. |
+
+
+## 4 Joc de proves <a name="4"></a>
+
+L'emissor final publica els següent [joc de proves a l'entorn de pre-producció][proves]
+ 
+[proves]: https://administracionelectronica.gob.es/ctt/svd/descargas#.YvOZNXbP2Ul
+ 
+![image](https://user-images.githubusercontent.com/32306731/137281698-9dfc2044-94f7-487f-a7d6-9a4e0707feb3.png) En cas de tindre problemes per accedir als jocs de proves, si us plau, obre un tiquet a través del [formulari][form]
+ 
+[form]:https://www.aoc.cat/portal-suport/peticio-integradors/idservei/integracio/
